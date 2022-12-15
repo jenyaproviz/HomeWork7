@@ -9,61 +9,54 @@
   </head>
   <body>
     <header class="mainHeader">
-      <h1 class="siteTitle">Hello! Web-store PICTURES.</h1>
+      <h1 class="siteTitle">Hello! Welcome to the web-store.</h1>
     </header>
 
     <div class="shopItems">
-      <div class="shopItem">
-        <span class="itemTitle">Picture 1</span>
+
+      <div id="item1" >
+        <span class="itemTitle" id="pic1">Picture 1</span>
         <h2 class="itemPrice">100$</h2>
         <img class="image" src="https://picsum.photos/300/300" />
         <div class="details">
-          <button onclick="addToCart1()">
-            Add to cart
-          </button>
-          <button onclick="removeFromCart1()">
-            Remove from Cart
-          </button>
+          
+          <button onclick="addItemOne()" id="btnAddOne">Add to Cart</button>
+      <button onclick="removeItemOne()" id="btnRemoveOne">Remove from Cart</button>
+
         </div>
       </div>
 
-      <div class="shopItem">
-        <span class="itemTitle">Picture 2</span>
+      <div id="item2">
+        <span class="itemTitle pic2">Picture 2</span>
         <h2 class="itemPrice">200$</h2>
         <img class="image" src="https://picsum.photos/300/300" />
         <div class="details">
-          <button onclick="addToCart2()">
-            Add to cart
-          </button>
-          <button onclick="removeFromCart2()">
-            Remove from Cart
-          </button>
+          
+          <button onclick="addItemTwo()" id="btnAddTwo">Add to Cart</button>
+      <button onclick="removeItemTwo()" id="btnRemoveTwo">Remove from Cart</button>
         </div>
       </div>
 
-      <div class="shopItem">
-        <span class="itemTitle">Picture 3</span>
+      <div id="item3">
+        <span class="itemTitle pic3">Picture 3</span>
         <h2 class="itemPrice">300$</h2>
         <img class="image" src="https://picsum.photos/300/300" />
         <div class="details">
-          <button onclick="addToCart3()">
-            Add to cart
-          </button>
-          <button onclick="removeFromCart3()">
-            Remove from Cart
-          </button>
+          
+          <button onclick="addItemThree()" id="btnAddThree">Add to Cart</button>
+      <button onclick="removeItemThree()" id="btnAddThree">Remove from Cart</button>
+
         </div>
       </div>
     </div>
-    <div class="cart-items"></div>
-    <div class="totalPrice">
-      <span class="itemTitle">Shopping Cart</span>
-
-      <button onclick="total()">
-        Purchase
-      </button>
+    <div id="cart">
+      <span class="cartTitle">SHOPPING CART</span>
+      <button onclick="order()" id="btnOrder">Go to the cart</button>
+      <button onclick="checkout()">Remove Total</button>
+      <button type="button" onClick="refreshPage()">Refresh Page</button>
     </div>
-
+      
+    </section>
     <footer class="main-footer"></footer>
   </body>
 </html>
